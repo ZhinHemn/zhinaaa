@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: #333;
+    }
+
+    nav {
+      background: #2c3e50;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+      transform: scale(1.1);
+    }
+
+    main {
+      background: white;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 25px;
+      color: #2c3e50;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      text-align: left;
+    }
+
+    input, textarea {
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      background-color: #f9f9f9;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: #1abc9c;
+      color: white;
+      font-size: 16px;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #16a085;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        margin: 0 10px;
+        font-size: 16px;
+      }
+
+      main {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/portfolio/">Portfolio</a>
+    <a href="/about/">About</a>
+    <a href="/services/">Services</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+
+  <main>
+    <h1>Contact Zhin</h1>
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="e.g., Zhin" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="e.g., zhin@example.com" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zhin's Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      color: #333;
+    }
+
+    nav {
+      background: #2c3e50;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+      transform: scale(1.1);
+    }
+
+    main {
+      padding: 50px 30px;
+      max-width: 1100px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.4em;
+      color: #2c3e50;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    li {
+      background: #f8f9fa;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    li:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    li h3 {
+      color: #34495e;
+      margin-bottom: 10px;
+    }
+
+    li p {
+      color: #555;
+      font-size: 1em;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/portfolio/">Portfolio</a>
+    <a href="/about/">About</a>
+    <a href="/services/">Services</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+
+  <main>
+    <h1>Zhin Hemn's Projects</h1>
+    <ul>
+      <li>
+        <h3>Student Attendance System</h3>
+        <p>A web-based platform to manage student check-ins using QR codes and Django backend.</p>
+      </li>
+      <li>
+        <h3>Personal Portfolio Website</h3>
+        <p>This very site! Created using HTML, CSS, and Django to showcase my web development journey.</p>
+      </li>
+      <li>
+        <h3>To-Do App</h3>
+        <p>A lightweight, user-friendly task tracker with add, edit, and delete functionalities.</p>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
